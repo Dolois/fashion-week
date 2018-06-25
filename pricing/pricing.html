@@ -26,26 +26,50 @@
 <body>
 
 
-
-
-
-
-
 <div class="pure-menu pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading"><img src="./logo_pole_emploi.jpg"></a>
+
+    <!-- ajout du logo pole-emploi -->
+    <a href="#" class="pure-menu-heading"><img src="./logo_affaire.jpg"></a>
+
     <ul class="pure-menu-list">
+
         <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+
+        <!-- ajout d'un menu déroulant -->
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+          <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+          <ul class="pure-menu-children">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+          </ul>
+        </li>
+        <!-- fin ajout menu déroulant -->
+
         <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Pricing</a></li>
         <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+
+        <li class="pure-menu-item">
+          <!-- ajout entrée arrondie -->
+          <form class="pure-form">
+              <input type="text" class="pure-input-rounded">
+              <button type="submit" class="pure-button-rech">Chercher</button>
+          </form>
+          <!-- fin entrée arrondie -->
+        </li>
     </ul>
+
+    <!-- ajout d'un bouton connexion -->
+    <button class="pure-button-cnx">Connexion</button>
+    <!-- fin ajour bouton -->
+
 </div>
 
 <div class="banner">
     <h1 class="banner-head">
-        Simple Pricing.<br>
-        Try before you buy.
     </h1>
 </div>
+
 
 <div class="l-content">
     <div class="pricing-tables pure-g">
@@ -118,6 +142,67 @@
             </div>
         </div>
     </div> <!-- end pricing-tables -->
+
+
+    <!-- ajout forme multi-colonne -->
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Légende</legend>
+
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="first-name">Prénom</label>
+                    <input id="first-name" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="last-name">Nom</label>
+                    <input id="last-name" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="email">Email</label>
+                    <input id="email" class="pure-u-23-24" type="email" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="city">Ville</label>
+                    <input id="city" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="state">Région</label>
+                    <select id="state" class="pure-input-1-2">
+                        <option>FR-ARA</option>
+                        <option>FR-BFC</option>
+                        <option>FR-BRE</option>
+                        <option>FR-CVL</option>
+                        <option>FR-COR</option>
+                        <option>FR-GES</option>
+                        <option>FR-HDF</option>
+                        <option>FR-IDF</option>
+                        <option>FR-NOR</option>
+                        <option>FR-NAQ</option>
+                        <option>FR-OCC</option>
+                        <option>FR-PDL</option>
+                        <option>FR-PAC</option>
+                        <option>FR-GP</option>
+                        <option>FR-GF</option>
+                        <option>FR-MQ</option>
+                        <option>FR-RE</option>
+                        <option>FR-YT</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="terms" class="pure-checkbox">
+                <input id="terms" type="checkbox"> J'ai lu les termes et conditions
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+    </form>
+    <!-- fin ajout forme multi-colonne -->
 
     <div class="information pure-g">
         <div class="pure-u-1 pure-u-md-1-2">

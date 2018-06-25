@@ -40,6 +40,13 @@ p {
     padding: .5em .7em;
 }
 
+.pure-button-cnx {
+  margin-left: 28vw;
+}
+
+.pure-form {
+  margin-left: 5vw;
+}
 
 /*
  * -- BANNER --
@@ -49,17 +56,17 @@ p {
  */
 
 .banner {
-    background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    background-image: url("http://www.barrattdevelopments.co.uk/~/media/Images/B/Barratt-Developments/content-images/business-model-graph.jpg?la=en");
     text-align: center;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
-
-    height: 200px;
-    width: 100%;
+    height: auto;
+    width: 36%;
+    margin-left: 30vw;
     margin-bottom: 3em;
     display: table;
 }
 
+/*
     .banner-head {
         display: table-cell;
         vertical-align: middle;
@@ -69,7 +76,7 @@ p {
         font-weight: 500;
         text-shadow: 0 1px 1px black;
     }
-
+*/
 
 
 /*
